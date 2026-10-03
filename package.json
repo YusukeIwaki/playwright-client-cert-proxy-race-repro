@@ -1,0 +1,10 @@
+{
+  "name": "playwright-client-cert-proxy-race-repro",
+  "private": true,
+  "scripts": {
+    "install-browser": "playwright-core install chromium"
+  },
+  "dependencies": {
+    "playwright-core": "1.63.0"
+  }
+}
