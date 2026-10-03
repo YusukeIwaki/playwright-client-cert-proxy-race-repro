@@ -2,9 +2,11 @@
   "name": "playwright-client-cert-proxy-race-repro",
   "private": true,
   "scripts": {
-    "install-browser": "playwright-core install chromium"
+    "install-browser": "playwright install chromium",
+    "test": "playwright test tests/client-certificates.spec.js --workers=1",
+    "test:bun": "bun node_modules/@playwright/test/cli.js test tests/client-certificates.spec.js --workers=1"
   },
-  "dependencies": {
-    "playwright-core": "1.63.0"
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
   }
 }
